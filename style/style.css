@@ -6,6 +6,8 @@
 }
 
 
+
+
 body{
     background: #3A1C71;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
@@ -25,7 +27,6 @@ body{
       font-size: 4rem;
       color: white;
       display: flex;
-    flex: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -103,3 +104,108 @@ body{
     font-family: sans-serif;
   }
 
+  @media only screen and (min-width: 450px) and (max-width: 810px)  {
+
+    .main-container{
+      font-size: 2rem;
+      color: white;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100vh;
+  }
+
+
+  button{
+          /* Para mobile não deve ter animação */
+    -webkit-transition: none;
+    transition: none;
+    animation-play-state: paused;
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid #3E1E71;
+    background-color: rgba(169, 169, 169, 0.233);
+    border-radius: 6px;
+    color: black;
+  }
+
+  button:focus{
+    background-color: #F9A57B;
+    border: 2px solid #3E1E71;
+    width: 20rem;
+}
+
+  input{
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    /* Para mobile não deve ter animação */
+    animation-play-state: paused;
+    -webkit-transition: none;
+    transition: none;
+    text-align: center;
+  }
+
+  input:focus{
+    width: 20rem;
+    border: 4px solid whitesmoke;
+    text-align: left;
+}
+    }
+
+    @media only screen and (min-width: 100px) and (max-width: 459px)  {
+
+      .main-container{
+        font-size: 1.4rem;
+        color: white;
+        display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      height: 100vh;
+    }
+
+    input{
+      width: 17rem;
+      height: 1rem;
+      border: 1px solid whitesmoke;
+      border-radius: 6px;
+      /* Para mobile não deve ter animação */
+      -webkit-transition: none;
+      transition: none;
+      animation-play-state: paused;
+      text-align: center;
+    }
+
+    input:focus{
+      width: 17rem;
+      border: 4px solid whitesmoke;
+      text-align: left;
+  }
+
+    button{
+      /* Para mobile não deve ter animação */
+      -webkit-transition: none;
+      transition: none;
+      animation-play-state: paused;
+      width: 17rem;
+      height: 1rem;
+      border: 1px solid #3E1E71;
+      background-color: rgba(169, 169, 169, 0.233);
+      border-radius: 6px;
+      color: black;
+    }
+
+    button:focus{
+      background-color: #F9A57B;
+      border: 2px solid #3E1E71;
+      width: 17rem;
+  }
+
+      }
+
+     

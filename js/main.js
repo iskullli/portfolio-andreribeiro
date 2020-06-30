@@ -1,7 +1,6 @@
 (function (win, doc) {
     'use strict';
 
-
     function DOM(elements) {
         this.element = doc.querySelectorAll(elements);
     }
